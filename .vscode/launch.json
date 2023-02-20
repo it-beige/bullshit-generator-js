@@ -1,0 +1,38 @@
+{
+  // 使用 IntelliSense 了解相关属性。 
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "启动程序",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      // "program": "${workspaceFolder}/bullshit-generator-js/index.js",
+      "program": "${workspaceFolder}/index.js",
+      "outFiles": [
+        "${workspaceFolder}/**/*.js"
+      ],
+      // 输出设置为默认终端可以调式命令行参数
+      // "console": "integratedTerminal",
+    },
+    {
+      "name": "命令行方式调试",
+      "program": "${workspaceFolder}/index.js",
+      "args": [
+        // "./index.js",
+        // "--fix"
+      ],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "request": "launch",
+      "type": "node"
+    }
+  ]
+}
